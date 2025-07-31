@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Collections.Specialized;
 using System.Linq;
-using System.Text;
 using Dapper;
 using Microsoft.Data.Sqlite;
 using System.Data.SqlClient;
