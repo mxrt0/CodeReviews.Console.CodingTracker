@@ -77,7 +77,7 @@ namespace CodingTracker.mxrt0
                 {
                     if (property.Name != nameof(CodingGoal.IsCompleted))
                     {
-                        table.AddColumn(property.Name.ToString(), c => c.Centered());
+                        table.AddColumn(property.Name, c => c.Centered());
                     }
                 }
 
