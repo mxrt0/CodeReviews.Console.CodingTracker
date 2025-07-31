@@ -2,6 +2,7 @@
 
 Console-based CRUD app to track coding hours. Developed with C# and SQLite.
 
+
 ## Given requirements
 
 * When the app starts, it should create a SQLite DB if one is not present and insert a table for logging coding sessions.
@@ -48,6 +49,13 @@ Console-based CRUD app to track coding hours. Developed with C# and SQLite.
 ## Areas To Improve
 * Navigating the UI when I have such a high number of methods.
 * Extracting methods efficiently without breaking flow.
+
+## Startup instructions
+* This project relies on an App.config file to store DB connection string.
+* For security and flexibility, this file is excluded from source control and not included in the repository.
+* A template of the necessary configuration is provided in the 'App.config.example' file in the root.
+* Rename the example file to 'App.config' and use it as your configuration file.
+* App should be good to go.
 
 ## Resources
 * CSharpAcademy YT video on the topic(only for base DB CRUD)
