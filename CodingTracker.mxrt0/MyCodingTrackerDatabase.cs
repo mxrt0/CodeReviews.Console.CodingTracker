@@ -17,7 +17,7 @@ namespace CodingTracker.mxrt0
         private readonly string _connectionStringKey;
         private readonly string _dbPath;
 
-        public MyCodingTrackerDatabase() : this("DefaultConnectionString", Path.Combine("..", "..", "..", "codingTracker.db")
+        public MyCodingTrackerDatabase() : this("DefaultConnectionString", Path.Combine("..", "..", "..", "codingTracker.db"))
         {
 
         }
