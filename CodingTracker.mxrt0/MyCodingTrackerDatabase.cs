@@ -17,7 +17,7 @@ namespace CodingTracker.mxrt0
         private readonly string _connectionStringKey;
         private readonly string _dbPath;
 
-        public MyCodingTrackerDatabase() : this("DefaultConnectionString", "DefaultDatabasePath")
+        public MyCodingTrackerDatabase() : this("DefaultConnectionString", Path.Combine("..", "..", "..", "codingTracker.db")
         {
 
         }
@@ -32,16 +32,8 @@ namespace CodingTracker.mxrt0
         {
             return ConfigurationManager.ConnectionStrings[_connectionStringKey].ConnectionString;
         }
-        public string GetDbPath()
-        {
-            var path = ConfigurationManager.AppSettings[_dbPath];
-
-            if (string.IsNullOrWhiteSpace(path))
-            {
-                throw new InvalidOperationException("Database path is missing or empty.");
-            }
-            return path;         
-        }
+        public string GetDbPath() => _dbPath;
+        
         public void CreateDbTable()
         {
             string dbPath = GetDbPath();
